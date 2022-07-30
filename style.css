@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+table{
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 10px;
+}
+tbody {
+    display: inline-block;
+    padding: 16px 12.5px 15px 16px;
+    background: black;
+    border: 1px solid rgb(127 0 255);
+    border-radius: 5px;
+}
+input[type="button"] {
+    width: 74px;
+    height: 60px;
+    background: black;
+    border: 1px solid rebeccapurple;
+    color: white;
+}
+
+input[type="text"] {
+    width: 97.5%;
+    height: 77px;
+    text-align: right;
+    margin-bottom: 6px;
+    border: 1px solid rgb(71 18 124);
+    border-radius: 3px;
+    padding-right: 4px;
+font-size: 23px;}
+input:active{
+    color: rgb(0, 0, 0) ; 
+    background: rgb(0, 255, 242)  ;
+}
