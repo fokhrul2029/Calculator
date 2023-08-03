@@ -1,37 +1,76 @@
-*{
-    margin: 0;
-    padding: 0; 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-table{
-    border-collapse: collapse;
-    margin: auto;
-    margin-top: 10px;
+:root {
+  --white: rgba(255, 255, 255, 0.87);
+  --dark: rgba(0, 0, 0, 0.836);
+  --light: rgba(170, 166, 166, 0.685);
+}
+body {
+  scroll-behavior: smooth;
+  background-color: var(--dark);
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+}
+table {
+  border-collapse: collapse;
+  margin: auto;
+  margin-top: 50px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.63);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.title {
+  border-bottom: 1px solid var(--light);
+  display: block;
+  padding: 5px 0;
+  color: var(--light);
+}
+.mode {
+  color: var(--white);
+  border: 1px solid transparent;
+  background-color: var(--dark);
+  padding: 2px 15px;
+  border-radius: 10px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+}
+.result {
+  position: relative;
+  text-align: right;
+  display: block;
+  height: 100px;
+  overflow: hidden;
+}
+.result span {
+  position: absolute;
+  bottom: 6px;
+  right: 10px;
+  font-size: 21px;
 }
 tbody {
-    display: inline-block;
-    padding: 16px 12.5px 15px 16px;
-    background: black;
-    border: 1px solid rgb(127 0 255);
-    border-radius: 5px;
+  background: rgb(0 0 0 / 18%);
+  padding: 8px 3px 10px 3px;
+  display: block;
 }
-input[type="button"] {
-    width: 74px;
-    height: 60px;
-    background: black;
-    border: 1px solid rebeccapurple;
-    color: white;
-}
-
-input[type="text"] {
-    width: 97.5%;
-    height: 77px;
-    text-align: right;
-    margin-bottom: 6px;
-    border: 1px solid rgb(71 18 124);
-    border-radius: 3px;
-    padding-right: 4px;
-font-size: 23px;}
-input:active{
-    color: rgb(0, 0, 0) ; 
-    background: rgb(0, 255, 242)  ;
+button {
+  text-align: center;
+  box-shadow: 0 0 3px #ff000000;
+  border-radius: 100px;
+  width: 45px;
+  height: 45px;
+  margin: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.541);
+  color: var(--white);
 }
