@@ -24,6 +24,9 @@ table {
   border-radius: 5px;
   overflow: hidden;
 }
+thead {
+  background: rgb(0 0 0 / 18%);
+}
 .title {
   border-bottom: 1px solid var(--light);
   display: block;
@@ -60,6 +63,7 @@ tbody {
   background: rgb(0 0 0 / 18%);
   padding: 8px 3px 10px 3px;
   display: block;
+  box-shadow: 1px -3px 26px 17px #0000001f;
 }
 button {
   text-align: center;
